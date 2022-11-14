@@ -84,9 +84,7 @@ def max_filter(image, k_size):
 # on charge l'image
 original_image = cv2.imread("test.jpg")
 
-# on floute l'originale pour réduire la variété de pixels
 print("[*] génération du masque de bords..")
-
 edge_mask_img = edge_mask(original_image)
 cv2.imwrite("edge.jpg", edge_mask_img)
 
